@@ -19,7 +19,7 @@ for(let i = 0; i <= 100; i++){
     //step 3 i = 2 then i + 1 ...
     console.log('just testing', i)
 }
-*/
+
 //              0         1       2        3        4         5         6  
 const cars = ['Chevy', 'Volvo', 'Saab', 'Ford', 'Ferrari', 'Tesla', 'Nissan']
 for(let i = 0; i < cars.length; i++){
@@ -29,4 +29,21 @@ for(let i = 0; i < cars.length; i++){
     }
     //console.log('Check out my car', cars[i])
 }
+*/
 
+//Lab
+// 1. Write a loop that outputs;
+// 10
+// 9
+// 8
+// ...
+// 2
+// 1
+// BlAST OFF!
+
+for(let i = 11; i <= 11 && i > 1; i--){
+    console.log(i-1)
+    if(i <= 2){
+        console.log('BlAST OFF!')
+    }
+}
