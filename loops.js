@@ -4,7 +4,7 @@
 
 // let i = 0 --> initializes the variable
 // i < 10 --> is the condition to be checked
-// i++ --> this adds 1 to i 
+// i++ --> this adds 1 to i
 /*
 for(let i = 0; i < 10; i++){
     console.log('loop is running', i)
@@ -40,10 +40,80 @@ for(let i = 0; i < cars.length; i++){
 // 2
 // 1
 // BlAST OFF!
-
+/*
 for(let i = 11; i <= 11 && i > 1; i--){
     console.log(i-1)
     if(i <= 2){
         console.log('BlAST OFF!')
     }
 }
+*/
+
+/*
+Coding challenge
+Name: FizzBuzz
+FizzBuzz is a task where the programmer is asked to print numbers from 1 to 30, but here’s the catch…
+2. multiple of three should print “Fizz”
+3. multiple of five should print “Buzz”
+4. and lastly print “FizzBuzz” for multiples of three and five.
+Bonus: create a function for this challenge
+*/
+/*
+for (let i = 1; i <= 30; i++) {
+  if (i % 3 == 0 && i % 5 == 0) {
+    console.log(i, "FizzBuzz")
+  } else if (i % 5 == 0) {
+    console.log(i, "Buzz")
+  } else if (i % 3 == 0) {
+    console.log(i, "Fizz")
+  } else {
+    console.log(i)
+  }
+}
+*/
+
+// Loop On Objects or Arrays - loops through the properties
+const person = {
+  fname: 'Jon',
+  lname: 'doe',
+  age: 25,
+}
+
+for (let x in person) {
+  console.log(x)
+}
+
+const numbers = [17, 18, 19, 20]
+
+for (let x in numbers) {
+  console.log(numbers[x])
+}
+
+//For Of Loop - loops through the values of Arrays (Strings are Arrays)
+
+for (let x of numbers) {
+  console.log(x)
+}
+
+const language = 'Javascipt'
+for (let x of language) {
+  console.log(x + ' hey')
+}
+
+
+// While Loop
+
+let y = 0
+while (y < 10) {
+    y++
+    console.log(y)
+}
+
+
+// Do While Loop
+
+let i = 1
+do {
+    i++
+    console.log(i)
+} while (i < 10)
