@@ -12,7 +12,6 @@
 
 console.log('Welcome to Node CLI Calculator App')
 console.log('')
-console.log('Please read the acceptance criteria to get started.')
 
 const prompt = require('prompt-sync')()
 const name = prompt('What is your name?')
@@ -22,47 +21,79 @@ const operation = prompt('Do you want to Add, Subtract, Multiply or Divide?')
 console.log(`We can do that, ${name}! Let's ${operation}!`)
 
 const firstNumber = prompt(`What is the first number you want to ${operation}?`)
-const secondNumber = prompt(`What is the second number you want to ${operation}?`)
+const secondNumber = prompt(
+  `What is the second number you want to ${operation}?`
+)
 
-
-function addOperation (x, y) {
+function addOperation(x, y) {
   return x + y
 }
+
 if (operation === 'Add') {
-  console.log(addOperation(Number(firstNumber), Number(secondNumber)))
+  console.log(
+    `The answer is `,
+    addOperation(Number(firstNumber), Number(secondNumber))
+  )
 }
 
-
-function subtractOperation (x, y) {
+function subtractOperation(x, y) {
   return x - y
 }
+
 if (operation === 'Subtract') {
-  console.log(subtractOperation(Number(firstNumber), Number(secondNumber)))
+  console.log(
+    `The answer is `,
+    subtractOperation(Number(firstNumber), Number(secondNumber))
+  )
 }
 
-
-function multiplyOperation (x, y) {
+function multiplyOperation(x, y) {
   return x * y
 }
 if (operation === 'Multiply') {
-  console.log(multiplyOperation(Number(firstNumber), Number(secondNumber)))
+  console.log(
+    `The answer is `,
+    multiplyOperation(Number(firstNumber), Number(secondNumber))
+  )
 }
 
-
-function divideOperation (x, y) {
+function divideOperation(x, y) {
   return x / y
 }
 if (operation === 'Divide') {
-  console.log(divideOperation(Number(firstNumber), Number(secondNumber)))
+  console.log(
+    `The answer is `,
+    divideOperation(Number(firstNumber), Number(secondNumber))
+  )
 }
 
+const runAgainOrExit = prompt('Do you want to continue? Yes or No?')
+const operationRepromt = prompt('Ok, what do you want to do?')
 
-
-
-
-const runAgainOrExit = prompt('Do you want to continue? Type Yes or No')
-if (runAgainOrExit === 'Yes') {
-  console.log(`We can do that, ${name}! Let's ${operation}!`)
+if (runAgainOrExit == 'Yes') {
+  console.log(operationRepromt)
 } else {
-  console.log(`Thanks! Let's calculate again soon, ${name}.`)
+  console.log(`Ok. Let's calculate again soon, ${name}.`)
 }
+
+// if (operationRepromt == 'Add') {
+//   console.log(
+//     `The answer is `,
+//     addOperation(Number(firstNumber), Number(secondNumber))
+//   )
+// } else if (operationRepromt == 'Subtract') {
+//   console.log(
+//     `The answer is `,
+//     subtractOperation(Number(firstNumber), Number(secondNumber))
+//   )
+// } else if (operationRepromt == 'Multiply') {
+//   console.log(
+//     `The answer is `,
+//     multiplyOperation(Number(firstNumber), Number(secondNumber))
+//   )
+// } else if (operationRepromt == 'Divide') {
+//   console.log(
+//     `The answer is `,
+//     divideOperation(Number(firstNumber), Number(secondNumber))
+//   )
+// }
