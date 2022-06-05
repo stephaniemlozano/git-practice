@@ -21,9 +21,8 @@ const operation = prompt('Do you want to Add, Subtract, Multiply or Divide?')
 console.log(`We can do that, ${name}! Let's ${operation}!`)
 
 const firstNumber = prompt(`What is the first number you want to ${operation}?`)
-const secondNumber = prompt(
-  `What is the second number you want to ${operation}?`
-)
+const secondNumber = prompt(`What is the second number you want to ${operation}?`)
+
 
 function addOperation(x, y) {
   return x + y
@@ -69,12 +68,20 @@ if (operation === 'Divide') {
 
 const runAgainOrExit = prompt('Do you want to continue? Yes or No?')
 const operationRepromt = prompt('Ok, what do you want to do?')
+const runAgain = 'Yes'
 
-if (runAgainOrExit == 'Yes') {
+
+if (runAgainOrExit === runAgain) {
   console.log(operationRepromt)
 } else {
   console.log(`Ok. Let's calculate again soon, ${name}.`)
 }
+
+
+
+
+
+
 
 // if (operationRepromt == 'Add') {
 //   console.log(
